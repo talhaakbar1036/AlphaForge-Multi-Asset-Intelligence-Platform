@@ -1,0 +1,38 @@
+# AlphaForge AI - core dependencies
+# Python >= 3.10 recommended (developed on 3.12)
+# Verified against numpy 2.x / pandas 3.x environments.
+
+# --- Data collection ---
+yfinance>=0.2.40
+pandas-datareader>=0.11.1
+fredapi>=0.5.2
+requests>=2.31
+
+# --- Data processing / features ---
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+ta>=0.11.0
+pyarrow>=14.0
+
+# --- Sentiment (rule-based lexicon) ---
+vaderSentiment>=3.3.2
+
+# --- Charts ---
+matplotlib>=3.7
+
+# --- API / dashboard ---
+fastapi>=0.110
+uvicorn>=0.29
+streamlit>=1.35
+pydantic>=2.6
+
+# --- Config ---
+python-dotenv>=1.0
+
+# --- Notebooks ---
+seaborn>=0.13
+
+# --- Dev ---
+pytest>=8.0
+ruff>=0.4

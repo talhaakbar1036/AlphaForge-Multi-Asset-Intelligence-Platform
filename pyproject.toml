@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alphaforge-ai"
+version = "0.3.0"
+description = "AlphaForge AI - multi-asset market intelligence and investment decision-support platform"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "AlphaForge AI contributors" }]
+keywords = ["finance", "technical-analysis", "backtesting", "decision-support"]
+
+dependencies = [
+  "yfinance>=0.2.40",
+  "pandas-datareader>=0.11.1",
+  "fredapi>=0.5.2",
+  "requests>=2.31",
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "ta>=0.11.0",
+  "pyarrow>=14.0",
+  "matplotlib>=3.7",
+  "vaderSentiment>=3.3.2",
+  "fastapi>=0.110",
+  "uvicorn>=0.29",
+  "streamlit>=1.35",
+  "pydantic>=2.6",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+# Financial AI Copilot (RAG + local embeddings + document extraction).
+# Mirrors requirements-ai.txt; core install stays lean.
+ai = [
+  "chromadb>=1.0",
+  "sentence-transformers>=3.0",
+  "pypdf>=4.0",
+  "beautifulsoup4>=4.12",
+]
+# Optional next-session direction LSTM (training + inference).
+# Mirrors requirements-ml.txt; core install stays lean.
+ml = [
+  "tensorflow>=2.16",
+  "scikit-learn>=1.3",
+  "joblib>=1.3",
+]
+
+[project.scripts]
+alphaforge = "scripts.run_pipeline:main"
+
+[tool.setuptools.packages.find]
+include = ["src*", "scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::FutureWarning", "ignore::UserWarning"]
+
+[tool.ruff.lint.per-file-ignores]
+# FastAPI's dependency-injection idiom declares Depends()/File() in
+# parameter defaults; that is the framework's canonical style, not a bug.
+"src/api/ai_routes.py" = ["B008"]

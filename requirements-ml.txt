@@ -1,0 +1,14 @@
+# AlphaForge AI - optional direction-model dependencies
+# Install on top of requirements.txt:  pip install -r requirements-ml.txt
+# (or:  pip install -e ".[ml]"  - the extras in pyproject.toml stay in sync)
+#
+# Everything here is OPTIONAL: the core platform, API, dashboard, AI copilot
+# and all existing tests run without TensorFlow. The /api/v1/predict endpoint
+# returns HTTP 503 until these are installed and trained artifacts exist.
+#
+# CPU wheels are sufficient; a GPU is not required.
+# Verified on Python 3.12 with TensorFlow 2.21, scikit-learn 1.9, joblib 1.6.
+
+tensorflow>=2.16
+scikit-learn>=1.3
+joblib>=1.3

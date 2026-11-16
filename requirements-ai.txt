@@ -1,0 +1,19 @@
+# AlphaForge Financial AI Copilot - optional dependencies
+# Install on top of requirements.txt:  pip install -r requirements-ai.txt
+# (or:  pip install -e ".[ai]"  - the extras in pyproject.toml stay in sync)
+#
+# Everything here is OPTIONAL: without these the quantitative platform and the
+# /api/v1 routes work exactly as before, and the copilot degrades to the
+# deterministic hashing embedder + in-memory vector store (chromadb missing)
+# or to retrieval-only answers (no LLM server).
+# Versions below were verified together on Python 3.12.
+
+# Vector index (persistent document store)
+chromadb>=1.0
+
+# Local embeddings (small CPU model, ~90 MB download on first use)
+sentence-transformers>=3.0
+
+# Document text extraction
+pypdf>=4.0            # PDF
+beautifulsoup4>=4.12  # HTML

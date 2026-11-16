@@ -1,0 +1,598 @@
+{
+  "generated_at": "2026-08-21 17:00:40",
+  "figures": [
+    "/media/nobita/6753310e-57dd-4f02-9459-38098a4767b9/AI-Stock-Market-AnalysisAlphaForge-AI-Multi-Asset-Intelligence-Platform/figures/eda/stocks_price_trends.png",
+    "/media/nobita/6753310e-57dd-4f02-9459-38098a4767b9/AI-Stock-Market-AnalysisAlphaForge-AI-Multi-Asset-Intelligence-Platform/figures/eda/stocks_normalized_5y.png",
+    "/media/nobita/6753310e-57dd-4f02-9459-38098a4767b9/AI-Stock-Market-AnalysisAlphaForge-AI-Multi-Asset-Intelligence-Platform/figures/eda/stocks_return_distributions.png",
+    "/media/nobita/6753310e-57dd-4f02-9459-38098a4767b9/AI-Stock-Market-AnalysisAlphaForge-AI-Multi-Asset-Intelligence-Platform/figures/eda/stocks_rolling_vol.png",
+    "/media/nobita/6753310e-57dd-4f02-9459-38098a4767b9/AI-Stock-Market-AnalysisAlphaForge-AI-Multi-Asset-Intelligence-Platform/figures/eda/cross_asset_correlation.png",
+    "/media/nobita/6753310e-57dd-4f02-9459-38098a4767b9/AI-Stock-Market-AnalysisAlphaForge-AI-Multi-Asset-Intelligence-Platform/figures/eda/macro_relationships.png",
+    "/media/nobita/6753310e-57dd-4f02-9459-38098a4767b9/AI-Stock-Market-AnalysisAlphaForge-AI-Multi-Asset-Intelligence-Platform/figures/eda/NVDA_sentiment_returns.png"
+  ],
+  "tables": {
+    "overview": [
+      {
+        "group": "stocks",
+        "symbol": "AAPL",
+        "rows": 9198,
+        "start": "1990-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 11,
+        "ann_vol": 0.421,
+        "total_return": 953.06
+      },
+      {
+        "group": "stocks",
+        "symbol": "MSFT",
+        "rows": 9198,
+        "start": "1990-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 8,
+        "ann_vol": 0.314,
+        "total_return": 633.4
+      },
+      {
+        "group": "stocks",
+        "symbol": "NVDA",
+        "rows": 6909,
+        "start": "1999-01-22",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 12,
+        "ann_vol": 0.593,
+        "total_return": 4961.21
+      },
+      {
+        "group": "stocks",
+        "symbol": "GOOGL",
+        "rows": 5507,
+        "start": "2004-08-19",
+        "end": "2026-07-10",
+        "missing_pct": 0.0,
+        "outliers": 10,
+        "ann_vol": 0.307,
+        "total_return": 141.25
+      },
+      {
+        "group": "stocks",
+        "symbol": "AMZN",
+        "rows": 7334,
+        "start": "1997-05-15",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 15,
+        "ann_vol": 0.55,
+        "total_return": 2524.71
+      },
+      {
+        "group": "stocks",
+        "symbol": "META",
+        "rows": 3556,
+        "start": "2012-05-18",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 9,
+        "ann_vol": 0.398,
+        "total_return": 16.18
+      },
+      {
+        "group": "stocks",
+        "symbol": "TSLA",
+        "rows": 4033,
+        "start": "2010-06-29",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 3,
+        "ann_vol": 0.574,
+        "total_return": 246.86
+      },
+      {
+        "group": "stocks",
+        "symbol": "AMD",
+        "rows": 9198,
+        "start": "1990-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 11,
+        "ann_vol": 0.613,
+        "total_return": 128.55
+      },
+      {
+        "group": "indices",
+        "symbol": "^GSPC",
+        "rows": 9198,
+        "start": "1990-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 17,
+        "ann_vol": 0.18,
+        "total_return": 19.89
+      },
+      {
+        "group": "indices",
+        "symbol": "^IXIC",
+        "rows": 9198,
+        "start": "1990-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 12,
+        "ann_vol": 0.231,
+        "total_return": 55.33
+      },
+      {
+        "group": "indices",
+        "symbol": "^DJI",
+        "rows": 8692,
+        "start": "1992-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 18,
+        "ann_vol": 0.174,
+        "total_return": 15.55
+      },
+      {
+        "group": "indices",
+        "symbol": "^RUT",
+        "rows": 9198,
+        "start": "1990-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 13,
+        "ann_vol": 0.217,
+        "total_return": 16.38
+      },
+      {
+        "group": "indices",
+        "symbol": "^VIX",
+        "rows": 9199,
+        "start": "1990-01-02",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 19,
+        "ann_vol": 1.133,
+        "total_return": -0.0
+      },
+      {
+        "group": "etfs",
+        "symbol": "SPY",
+        "rows": 8419,
+        "start": "1993-01-29",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 15,
+        "ann_vol": 0.186,
+        "total_return": 16.05
+      },
+      {
+        "group": "etfs",
+        "symbol": "QQQ",
+        "rows": 6877,
+        "start": "1999-03-10",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 9,
+        "ann_vol": 0.27,
+        "total_return": 12.94
+      },
+      {
+        "group": "etfs",
+        "symbol": "XLK",
+        "rows": 6929,
+        "start": "1998-12-22",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 9,
+        "ann_vol": 0.26,
+        "total_return": 10.31
+      },
+      {
+        "group": "etfs",
+        "symbol": "SOXX",
+        "rows": 6285,
+        "start": "2001-07-13",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 2,
+        "ann_vol": 0.335,
+        "total_return": 21.86
+      },
+      {
+        "group": "etfs",
+        "symbol": "VGT",
+        "rows": 5647,
+        "start": "2004-01-30",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 7,
+        "ann_vol": 0.227,
+        "total_return": 17.84
+      },
+      {
+        "group": "commodities",
+        "symbol": "GC=F",
+        "rows": 6489,
+        "start": "2000-08-30",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 6,
+        "ann_vol": 0.178,
+        "total_return": 13.59
+      },
+      {
+        "group": "commodities",
+        "symbol": "SI=F",
+        "rows": 6491,
+        "start": "2000-08-30",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 7,
+        "ann_vol": 0.331,
+        "total_return": 10.69
+      },
+      {
+        "group": "commodities",
+        "symbol": "CL=F",
+        "rows": 6498,
+        "start": "2000-08-23",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 3,
+        "ann_vol": 0.775,
+        "total_return": 1.44
+      },
+      {
+        "group": "commodities",
+        "symbol": "NG=F",
+        "rows": 6495,
+        "start": "2000-08-30",
+        "end": "2026-07-13",
+        "missing_pct": 0.0,
+        "outliers": 11,
+        "ann_vol": 0.613,
+        "total_return": -0.4
+      },
+      {
+        "group": "forex",
+        "symbol": "EURUSD=X",
+        "rows": 5868,
+        "start": "2003-12-01",
+        "end": "2026-07-14",
+        "missing_pct": 0.0,
+        "outliers": 10,
+        "ann_vol": 0.11,
+        "total_return": -0.05
+      },
+      {
+        "group": "forex",
+        "symbol": "GBPUSD=X",
+        "rows": 5880,
+        "start": "2003-12-01",
+        "end": "2026-07-14",
+        "missing_pct": 0.0,
+        "outliers": 5,
+        "ann_vol": 0.093,
+        "total_return": -0.22
+      },
+      {
+        "group": "forex",
+        "symbol": "JPY=X",
+        "rows": 7702,
+        "start": "1996-10-30",
+        "end": "2026-07-14",
+        "missing_pct": 0.0,
+        "outliers": 10,
+        "ann_vol": 0.115,
+        "total_return": 0.42
+      },
+      {
+        "group": "forex",
+        "symbol": "CNY=X",
+        "rows": 6270,
+        "start": "2001-06-25",
+        "end": "2026-07-14",
+        "missing_pct": 0.0,
+        "outliers": 12,
+        "ann_vol": 0.045,
+        "total_return": -0.18
+      }
+    ],
+    "return_distribution_stats": [
+      {
+        "symbol": "AAPL",
+        "mean_ann": 0.2781,
+        "vol_ann": 0.4205,
+        "skew": -0.371,
+        "kurtosis": 24.325,
+        "jarque_bera_p": 0.0
+      },
+      {
+        "symbol": "MSFT",
+        "mean_ann": 0.2259,
+        "vol_ann": 0.3136,
+        "skew": 0.212,
+        "kurtosis": 6.386,
+        "jarque_bera_p": 0.0
+      },
+      {
+        "symbol": "NVDA",
+        "mean_ann": 0.4851,
+        "vol_ann": 0.5928,
+        "skew": 0.596,
+        "kurtosis": 11.449,
+        "jarque_bera_p": 0.0
+      },
+      {
+        "symbol": "GOOGL",
+        "mean_ann": 0.2737,
+        "vol_ann": 0.3068,
+        "skew": 0.613,
+        "kurtosis": 8.733,
+        "jarque_bera_p": 0.0
+      },
+      {
+        "symbol": "AMZN",
+        "mean_ann": 0.4178,
+        "vol_ann": 0.55,
+        "skew": 1.06,
+        "kurtosis": 11.545,
+        "jarque_bera_p": 0.0
+      },
+      {
+        "symbol": "META",
+        "mean_ann": 0.2809,
+        "vol_ann": 0.3984,
+        "skew": 0.422,
+        "kurtosis": 19.529,
+        "jarque_bera_p": 0.0
+      },
+      {
+        "symbol": "TSLA",
+        "mean_ann": 0.5084,
+        "vol_ann": 0.5739,
+        "skew": 0.373,
+        "kurtosis": 4.893,
+        "jarque_bera_p": 0.0
+      },
+      {
+        "symbol": "AMD",
+        "mean_ann": 0.3206,
+        "vol_ann": 0.6127,
+        "skew": 0.375,
+        "kurtosis": 9.642,
+        "jarque_bera_p": 0.0
+      }
+    ],
+    "volatility_clustering": [
+      {
+        "symbol": "AAPL",
+        "acf_absret_lag1": 0.22,
+        "acf_absret_lag2": 0.194,
+        "acf_absret_lag3": 0.168,
+        "acf_absret_lag4": 0.177,
+        "acf_absret_lag5": 0.161,
+        "acf_absret_lag6": 0.164,
+        "acf_absret_lag7": 0.149,
+        "acf_absret_lag8": 0.153,
+        "acf_absret_lag9": 0.134,
+        "acf_absret_lag10": 0.159
+      },
+      {
+        "symbol": "MSFT",
+        "acf_absret_lag1": 0.224,
+        "acf_absret_lag2": 0.222,
+        "acf_absret_lag3": 0.185,
+        "acf_absret_lag4": 0.195,
+        "acf_absret_lag5": 0.202,
+        "acf_absret_lag6": 0.181,
+        "acf_absret_lag7": 0.193,
+        "acf_absret_lag8": 0.167,
+        "acf_absret_lag9": 0.172,
+        "acf_absret_lag10": 0.164
+      },
+      {
+        "symbol": "NVDA",
+        "acf_absret_lag1": 0.221,
+        "acf_absret_lag2": 0.241,
+        "acf_absret_lag3": 0.228,
+        "acf_absret_lag4": 0.214,
+        "acf_absret_lag5": 0.225,
+        "acf_absret_lag6": 0.207,
+        "acf_absret_lag7": 0.191,
+        "acf_absret_lag8": 0.199,
+        "acf_absret_lag9": 0.172,
+        "acf_absret_lag10": 0.195
+      },
+      {
+        "symbol": "GOOGL",
+        "acf_absret_lag1": 0.16,
+        "acf_absret_lag2": 0.153,
+        "acf_absret_lag3": 0.158,
+        "acf_absret_lag4": 0.16,
+        "acf_absret_lag5": 0.151,
+        "acf_absret_lag6": 0.136,
+        "acf_absret_lag7": 0.132,
+        "acf_absret_lag8": 0.133,
+        "acf_absret_lag9": 0.129,
+        "acf_absret_lag10": 0.138
+      },
+      {
+        "symbol": "AMZN",
+        "acf_absret_lag1": 0.3,
+        "acf_absret_lag2": 0.265,
+        "acf_absret_lag3": 0.28,
+        "acf_absret_lag4": 0.256,
+        "acf_absret_lag5": 0.271,
+        "acf_absret_lag6": 0.242,
+        "acf_absret_lag7": 0.257,
+        "acf_absret_lag8": 0.244,
+        "acf_absret_lag9": 0.233,
+        "acf_absret_lag10": 0.233
+      },
+      {
+        "symbol": "META",
+        "acf_absret_lag1": 0.111,
+        "acf_absret_lag2": 0.154,
+        "acf_absret_lag3": 0.111,
+        "acf_absret_lag4": 0.153,
+        "acf_absret_lag5": 0.115,
+        "acf_absret_lag6": 0.092,
+        "acf_absret_lag7": 0.109,
+        "acf_absret_lag8": 0.086,
+        "acf_absret_lag9": 0.083,
+        "acf_absret_lag10": 0.108
+      },
+      {
+        "symbol": "TSLA",
+        "acf_absret_lag1": 0.132,
+        "acf_absret_lag2": 0.124,
+        "acf_absret_lag3": 0.108,
+        "acf_absret_lag4": 0.091,
+        "acf_absret_lag5": 0.065,
+        "acf_absret_lag6": 0.065,
+        "acf_absret_lag7": 0.088,
+        "acf_absret_lag8": 0.085,
+        "acf_absret_lag9": 0.073,
+        "acf_absret_lag10": 0.096
+      },
+      {
+        "symbol": "AMD",
+        "acf_absret_lag1": 0.148,
+        "acf_absret_lag2": 0.125,
+        "acf_absret_lag3": 0.12,
+        "acf_absret_lag4": 0.103,
+        "acf_absret_lag5": 0.085,
+        "acf_absret_lag6": 0.074,
+        "acf_absret_lag7": 0.078,
+        "acf_absret_lag8": 0.075,
+        "acf_absret_lag9": 0.08,
+        "acf_absret_lag10": 0.094
+      }
+    ],
+    "adf_stationarity": [
+      {
+        "symbol": "AAPL",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      },
+      {
+        "symbol": "MSFT",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      },
+      {
+        "symbol": "NVDA",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      },
+      {
+        "symbol": "GOOGL",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      },
+      {
+        "symbol": "AMZN",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      },
+      {
+        "symbol": "META",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      },
+      {
+        "symbol": "TSLA",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      },
+      {
+        "symbol": "AMD",
+        "adf_p_returns": 0.01,
+        "adf_p_prices": 1.0
+      }
+    ],
+    "cross_asset_correlation_top": {
+      "^GSPC ~ SPY": 0.983,
+      "XLK ~ VGT": 0.976,
+      "QQQ ~ VGT": 0.965,
+      "^IXIC ~ VGT": 0.964,
+      "^IXIC ~ QQQ": 0.963,
+      "^GSPC ~ ^DJI": 0.957,
+      "^IXIC ~ XLK": 0.955,
+      "^DJI ~ SPY": 0.943,
+      "QQQ ~ XLK": 0.938,
+      "^GSPC ~ VGT": 0.905,
+      "SPY ~ VGT": 0.9,
+      "^GSPC ~ ^IXIC": 0.892,
+      "SOXX ~ VGT": 0.886,
+      "^IXIC ~ SPY": 0.881,
+      "XLK ~ SOXX": 0.88
+    },
+    "macro_relationships": [
+      {
+        "macro_series": "dollar_index",
+        "corr_with_level": 0.04,
+        "corr_with_change": 0.03
+      },
+      {
+        "macro_series": "treasury_10y",
+        "corr_with_level": 0.003,
+        "corr_with_change": 0.026
+      },
+      {
+        "macro_series": "ppi",
+        "corr_with_level": -0.006,
+        "corr_with_change": 0.015
+      },
+      {
+        "macro_series": "industrial_production",
+        "corr_with_level": -0.01,
+        "corr_with_change": 0.013
+      },
+      {
+        "macro_series": "unemployment",
+        "corr_with_level": -0.012,
+        "corr_with_change": -0.013
+      },
+      {
+        "macro_series": "unemployment_rate",
+        "corr_with_level": -0.012,
+        "corr_with_change": -0.013
+      },
+      {
+        "macro_series": "recession",
+        "corr_with_level": -0.005,
+        "corr_with_change": 0.011
+      },
+      {
+        "macro_series": "cpi",
+        "corr_with_level": 0.001,
+        "corr_with_change": 0.01
+      },
+      {
+        "macro_series": "gdp",
+        "corr_with_level": 0.004,
+        "corr_with_change": -0.004
+      },
+      {
+        "macro_series": "fed_funds_rate",
+        "corr_with_level": 0.024,
+        "corr_with_change": 0.003
+      },
+      {
+        "macro_series": "fed_rate",
+        "corr_with_level": 0.024,
+        "corr_with_change": 0.003
+      }
+    ],
+    "NVDA_sentiment_vs_returns": [
+      {
+        "bucket": "neutral",
+        "count": 6908,
+        "mean": 0.00192,
+        "std": 0.03735
+      }
+    ]
+  }
+}
